@@ -1,0 +1,21 @@
+const axgeo_B1 = 45*deg;
+const axgeo_B2 = 45*deg;
+const L_Q31 = 0.50;
+const L_Q32 = 0.50;
+
+  BEND1:       SBEND, L=1.0, ANGLE=axgeo_B1, at=10.0;
+  O_30:        DRIFT, L=0.5, at=11.0;
+  QUAD_31:     QUADRUPOLE, L=L_Q31, k1:=kL_Q31/L_Q31, at=11.5;
+  O_31:        DRIFT, L=0.3, at=12.0;
+  QUAD_32:     QUADRUPOLE, L=L_Q32, k1:=kL_Q32/L_Q32, at=12.3;
+  O_32:        DRIFT, L=0.5, at=12.8;
+  BEND2:       SBEND, L=1.0, ANGLE=axgeo_B2, at=13.3;
+  DRIFT1:      DRIFT, L=0.7, at=14.3;
+  HKICK1:      HKICKER, KICK:=ax_K1, at=15.0;
+  DRIFT2:      DRIFT, L=1.0, at=15.0;
+  VKICK1:      VKICKER, KICK:=ay_K1, at=16.0;
+  DRIFT3:      DRIFT, L=5.0, at=16.0;
+  MONITOR2:    MONITOR, at=21.0;
+
+
+

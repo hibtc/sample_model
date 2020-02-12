@@ -1,0 +1,15 @@
+path: beamLine
+init-files:
+  - strengths.str
+  - sequence.madx
+
+sequence: beamline1
+range: ['#s', '#e']
+
+beam: "../shared/beamSample.yml"
+
+twiss:
+  betx: 1.
+  bety: 1.
+  alfx: 0.
+  alfy: 0.

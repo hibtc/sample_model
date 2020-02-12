@@ -1,0 +1,20 @@
+beam, 
+	mass=  11.177929,    ! 12u = 12*931.494095457e-3
+	energy=16.337929,    ! 12u + 12*430MeV
+	charge=6.0,
+	ex=1e-06,
+	ey=1e-06,
+	sigt=0.001,
+	sige=0.001,
+	radiate=False,
+	sequence=beamline1;
+call, file="strengths.str";
+call, file="sequence.madx";
+
+use, sequence="beamline1";
+select, flag=twiss, column={name,s,betx,bety,alfx,alfy,mux,muy,dx,dy,dpx,dpy,x,y,px,py};
+twiss, sequence="beamline1", file="beamline1.twiss",
+	betx=1.,
+	bety=1.,
+	alfx=0.,
+	alfy=0.;

@@ -1,0 +1,7 @@
+call, file="../shared/defs.madx";
+
+! This is practical if you want to divide your sequences in smaller parts 
+beamline1: sequence, refer=entry, L=22.0;
+  call, file="sampleSeq1.seq";
+  call, file="sampleSeq2.seq";
+endsequence;

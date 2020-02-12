@@ -1,0 +1,9 @@
+particle: C
+mass:   11.177929     # 12u = 12*931.494095457e-3
+energy: 16.337929     # 12u + 12*430MeV
+charge: 6.0
+ex: 1.0e-06
+ey: 1.0e-06
+sigt: 0.001
+sige: 0.001
+radiate: false

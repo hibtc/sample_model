@@ -1,0 +1,11 @@
+! These are the nominal K-values of the quadrupoles
+kL_Q11 = 1.0;
+kL_Q12 = -1.0;
+kL_Q21 = 1.0;
+kL_Q22 = -1.0;
+kL_Q31 = 1.0;
+kL_Q32 = -1.0;
+! These are the kick nominal values
+ax_K1  = 0.000;
+ay_K1  = 0.000;
+

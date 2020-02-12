@@ -1,0 +1,21 @@
+! These are the fixed lengths of the
+! two quadrupole families
+const L_Q11 = 0.50;
+const L_Q12 = 0.50;
+const L_Q21 = 0.50;
+const L_Q22 = 0.50;
+
+  INIT:       DRIFT, L=1.0, at=0.0;
+  QUAD_11:    QUADRUPOLE, L=L_Q11, k1:=kL_Q11/L_Q11, at=1.0;
+  O_11:       DRIFT, L=0.3, at=1.5;
+  QUAD_12:    QUADRUPOLE, L=L_Q12, k1:=kL_Q12/L_Q12, at=1.8;
+  O_12:       DRIFT, L=2.7, at=2.3;
+  QUAD_21:    QUADRUPOLE, L=L_Q21, k1:=kL_Q21/L_Q21, at=5.0;
+  O_13:       DRIFT, L=0.3, at=5.5;
+  QUAD_22:    QUADRUPOLE, L=L_Q12, k1:=kL_Q12/L_Q12, at=5.8;
+  O_14:       DRIFT, L=1.2, at=6.3;
+  MONITOR1:   MONITOR, at=7.5;
+  O_15:       DRIFT, L=2.5, at=7.5;
+
+
+
