@@ -12,7 +12,7 @@ const L_Q22 = 0.50;
   O_12:       DRIFT, L=2.7, at=2.3;
   QUAD_21:    QUADRUPOLE, L=L_Q21, k1:=kL_Q21/L_Q21, at=5.0;
   O_13:       DRIFT, L=0.3, at=5.5;
-  QUAD_22:    QUADRUPOLE, L=L_Q22, k1:=kL_Q12/L_Q12, at=5.8;
+  QUAD_22:    QUADRUPOLE, L=L_Q22, k1:=kL_Q22/L_Q22, at=5.8;
   O_14:       DRIFT, L=1.2, at=6.3;
   MONITOR1:   MONITOR, at=7.5;
   O_15:       DRIFT, L=2.5, at=7.5;
